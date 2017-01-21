@@ -6,35 +6,19 @@
     android:layout_height="match_parent"
     tools:context="com.lubieplackibardzo.pizdzicheck.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="No siema"
-        android:id="@+id/elo"
-        android:textColor="@android:color/white"
-        android:textSize="35sp"
-        android:background="@android:color/holo_blue_bright"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:padding="5dp"
-        android:layout_marginTop="20dp" />
-
-
-    <Button
-        android:text="Kraków"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif"
-        android:id="@+id/pogoda1"
-        android:onClick="pogoda1"
-        android:layout_marginTop="25dp"
-        android:layout_below="@+id/elo"
-        android:layout_centerHorizontal="true" />
+    <ImageView android:src="@drawable/tatry"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
     <Button
         android:text="Warszawa"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:textColor="@android:color/holo_blue_dark"
         android:fontFamily="sans-serif"
+        android:textSize="24sp"
         android:id="@+id/pogoda2"
         android:onClick="pogoda2"
         android:layout_marginTop="25dp"
@@ -44,7 +28,10 @@
         android:text="Zakopane"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:textColor="@android:color/holo_blue_dark"
         android:fontFamily="sans-serif"
+        android:textSize="24sp"
         android:id="@+id/pogoda3"
         android:onClick="pogoda3"
         android:layout_marginTop="25dp"
@@ -54,13 +41,39 @@
         android:text="Wrocław"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:textColor="@android:color/holo_blue_dark"
         android:fontFamily="sans-serif"
+        android:textSize="24sp"
         android:id="@+id/pogoda4"
         android:onClick="pogoda4"
         android:layout_marginTop="25dp"
         android:layout_below="@+id/pogoda3"
         android:layout_centerHorizontal="true" />
-
-
-
+    <Button
+        android:text="Kraków"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:textColor="@android:color/holo_blue_dark"
+        android:fontFamily="sans-serif"
+        android:textSize="24sp"
+        android:id="@+id/pogoda1"
+        android:onClick="pogoda1"
+        android:layout_marginTop="97dp"
+        android:layout_below="@+id/elo"
+        android:layout_alignLeft="@+id/pogoda2"
+        android:layout_alignStart="@+id/pogoda2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No siema"
+        android:id="@+id/elo"
+        android:textColor="@android:color/white"
+        android:textSize="35sp"
+        android:background="@android:color/holo_blue_bright"
+        android:padding="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
